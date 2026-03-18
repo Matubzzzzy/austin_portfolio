@@ -99,8 +99,11 @@ header, nav, [class*="header"], [class*="nav"] {
   /* margin-top: 10px; */
 }
 
-.page-wrapper a {
+/* .page-wrapper a {
   color: #0074de;
+} */
+.page-wrapper a {
+  color: #0074de !important;
 }
 
 .page-wrapper h1,
@@ -109,10 +112,15 @@ header, nav, [class*="header"], [class*="nav"] {
 .page-wrapper h4,
 .page-wrapper p,
 .page-wrapper li,
-.page-wrapper strong,
-.page-wrapper a {
+.page-wrapper strong {
   color: #111827 !important;
 }
+
+.page-wrapper p,
+.page-wrapper li {
+  color: #374151 !important;
+}
+
 
 .nav-line .nav-link {
   background-color: #0074de;
