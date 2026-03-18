@@ -1,31 +1,34 @@
 ---
 type: page
-title: Photos
+title: Project Screenshots
 date: 2021-03-18
 ---
 
-# Photos
+import Gallery from "../components/Gallery"
 
-Here's some of my photography.
+# Project Screenshots
 
-import Image from 'next/image'
+## Kitchen Wizard
 
-<Image
-  src="/images/photo2.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/WeYamle9fDM)
+<Gallery images={[
+  { src: "/images/kitchen1.png", label: "Home Screens" },
+  { src: "/images/kitchen3.png", label: " " },
+  { src: "/images/kitchen6.png", label: "Recipe View" },
+  { src: "/images/kitchen2.png", label: "Meal Plan Questionnaire" },
+  { src: "/images/kitchen5.png", label: "Meal Plan View" },
+  { src: "/images/kitchen4.png", label: "Analytics" }
+]} />
 
-<Image
-  src="/images/photo.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/ndN00KmbJ1c)
+<hr />
+
+## Quizzify
+
+<Gallery images={[
+  { src: "/images/quiz1.jpeg", label: "Login Page " },
+  { src: "/images/quiz2.jpeg", label: "Profile page " },
+  { src: "/images/quiz3.jpeg", label: "Loading Screen " },
+  { src: "/images/quiz4.jpeg", label: "Home Pages " },
+  { src: "/images/quiz5.jpeg", label: " " },
+  { src: "/images/quiz6.jpeg", label: "Question Pages " },
+  { src: "/images/quiz7.jpeg", label: " " }
+]} />
