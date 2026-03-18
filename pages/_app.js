@@ -1,9 +1,13 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
-
 import '../styles/main.css'
+import { useEffect } from 'react'
 
 export default function Nextra({ Component, pageProps }) {
+  useEffect(() => {
+    document.body.style.position = 'relative'
+  }, [])
+
   return (
     <>
       <Head>
@@ -21,7 +25,10 @@ export default function Nextra({ Component, pageProps }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <Component {...pageProps} />
+      <div className="page-wrapper">
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }
+
