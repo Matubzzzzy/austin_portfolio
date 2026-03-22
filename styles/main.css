@@ -252,3 +252,52 @@ header, nav, [class*="header"], [class*="nav"] {
   color: black !important;
 }
 
+/* phone css */
+@media (max-width: 768px) {
+  .page-wrapper {
+    width: calc(100% - 2rem);
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    margin: 1rem auto;
+  }
+
+  /* Stack the name and profile photo vertically */
+  div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  /* Make profile photo smaller and centered */
+  div[style*="display: flex"] img {
+    width: 120px !important;
+    height: 120px !important;
+    margin-top: 1rem;
+  }
+
+  /* Shrink the gallery to 2 columns instead of 3 */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Single column gallery on very small screens */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .page-wrapper {
+    width: calc(100% - 1rem);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+}
